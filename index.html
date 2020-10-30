@@ -16,12 +16,15 @@
 </head>
 <body>
   
-  <h1>Client-Side Routing Step 2</h1>
+  <h1>Client-Side Routing Step 3</h1>
   <p>
-    Now that we can update the URL, the next thing to do is to load different content based on these url changes.
+    Now that we can change content based on the URL, we need to subscribe to url change events.
   </p>
   <p>
-    For this, we can use the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/location" target="__blank">location.pathname API</a>.
+    For this, we can use <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onpopstate" target="__blank">window.onpopstate</a>
+  </p>
+  <p>
+    Now, observe how the URL and content changes when we click the back and forward buttons after we navigate with the button.
   </p>
   <button onclick="pushState()">Click here to change the URL.</button>
   <div id="content">The content here will change once the URL is updated with pushState.</div>

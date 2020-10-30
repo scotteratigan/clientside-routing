@@ -9,3 +9,5 @@ const loadContent = () => {
   const { pathname } = window.location;
   contentDiv.textContent = `The pathname is ${pathname}`;
 }
+
+window.onpopstate = loadContent;
