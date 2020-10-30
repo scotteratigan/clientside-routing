@@ -9,14 +9,8 @@
       max-width: 600px;
       margin: 50px auto;
     }
-    h1, p, pre {
+    h1, p {
       margin: 10px 0;
-    }
-    pre {
-      border: 1px solid black;
-      font-size: 0.8rem;
-      padding: 20px;
-      font-family: "Lucida Console", Monaco, monospace;
     }
   </style>
 </head>
@@ -30,8 +24,7 @@
     This allows you to update the displayed URL on a browser without re-loading the content. It also updates the browser history to allow the forward and back buttons to function. (Reloading the page won't work with this url though, because we don't have a file with the name of 'somenewurl.html'.)
   </p>
   <button onclick="pushState()">Click here to change the URL.</button>
-  <p>The click function:</p>
-  <pre id="code"></pre>
+  <p>View the <a href="./script.js">JavaScript</a></p>
   <script src="./script.js"></script>
 </body>
 </html>
