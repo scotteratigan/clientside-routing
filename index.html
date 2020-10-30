@@ -9,7 +9,7 @@
       max-width: 600px;
       margin: 50px auto;
     }
-    h1, p, pre {
+    div, h1, p, pre {
       margin: 10px 0;
     }
     pre {
@@ -22,16 +22,16 @@
 </head>
 <body>
   
-  <h1>Client-Side Routing</h1>
+  <h1>Client-Side Routing Step 2</h1>
   <p>
-    The key to client-side routing is the <a href="https://developer.mozilla.org/en-US/docs/Web/API/History/pushState" target="__blank">history.pushState() API</a>.
+    Now that we can update the URL, the next thing to do is to load different content based on these url changes.
   </p>
   <p>
-    This allows you to update the displayed URL on a browser without re-loading the content. It also updates the browser history to allow the forward and back buttons to function. (Reloading the page won't work with this url though, because we don't have a file with the name of 'somenewurl.html'.)
+    For this, we can use the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/location" target="__blank">location.pathname API</a>.
   </p>
   <button onclick="pushState()">Click here to change the URL.</button>
-  <p>The click function:</p>
-  <pre id="code"></pre>
+  <div id="content">The content here will change once the URL is updated with pushState.</div>
+  <p>View the <a href="./script.js">JavaScript</a></p>
   <script src="./script.js"></script>
 </body>
 </html>

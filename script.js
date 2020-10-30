@@ -1,6 +1,11 @@
+const contentDiv = document.querySelector('#content');
+
 const pushState = () => {
   history.pushState('', '', ['somenewurl.html']);
+  loadContent();
 }
 
-// Show the function in the <pre> tag on the page:
-document.querySelector("#code").textContent = pushState.toString();
+const loadContent = () => {
+  const { pathname } = window.location;
+  contentDiv.textContent = `The pathname is ${pathname}`;
+}
