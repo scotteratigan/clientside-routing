@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1</title>
+  <style>
+    body {
+      max-width: 600px;
+      margin: 50px auto;
+    }
+    h1, p, pre {
+      margin: 10px 0;
+    }
+    pre {
+      border: 1px solid black;
+      font-size: 0.8rem;
+      padding: 20px;
+      font-family: "Lucida Console", Monaco, monospace;
+    }
+  </style>
+</head>
+<body>
+  
+  <h1>Client-Side Routing</h1>
+  <p>
+    The key to client-side routing is the <a href="https://developer.mozilla.org/en-US/docs/Web/API/History/pushState" target="__blank">history.pushState() API</a>.
+  </p>
+  <p>
+    This allows you to update the displayed URL on a browser without re-loading the content. It also updates the browser history to allow the forward and back buttons to function. (Reloading the page won't work with this url though, because we don't have a file with the name of 'somenewurl.html'.)
+  </p>
+  <button onclick="pushState()">Click here to change the URL.</button>
+  <p>The click function:</p>
+  <pre id="code"></pre>
+  <script src="./script.js"></script>
+</body>
+</html>

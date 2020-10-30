@@ -1,5 +1,7 @@
 # clientside-routing
 
-An exploration of a custom implementation of a client-side routing system.
+The key to client-side routing is the history.pushState() API. More info here:
+https://developer.mozilla.org/en-US/docs/Web/API/History/pushState
 
-The plan is for numbered branches as this develops. This space will be updated with links.
+This allows you to update the displayed URL on a browser without re-loading the content.
+
