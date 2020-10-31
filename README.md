@@ -10,3 +10,6 @@ https://github.com/scotteratigan/clientside-routing/tree/b5d4749f85f65373ff5697c
 
 # Step 3 - Listen to forward and back button events
 https://github.com/scotteratigan/clientside-routing/tree/479b318c15ba9a418f1f489ee03b05c81dfa538e
+
+# Step 4 - Add our own custom links
+https://github.com/scotteratigan/clientside-routing/tree/873c64849aca21908d3aaa4bc7216d66f1cf9d40
