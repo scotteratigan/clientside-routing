@@ -16,18 +16,22 @@
 </head>
 <body>
   
-  <h1>Client-Side Routing Step 3</h1>
+  <h1>Client-Side Routing Step 4</h1>
   <p>
-    Now that we can change content based on the URL, we need to subscribe to url change events.
+    Now that we have navigation working, let's navigate with links instead of a button.
   </p>
   <p>
-    For this, we can use <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onpopstate" target="__blank">window.onpopstate</a>
+    For this to work, we will use regular anchor tags, but we will add a click listener to add custom behavior which will call our history.pushState function.
   </p>
   <p>
-    Now, observe how the URL and content changes when we click the back and forward buttons after we navigate with the button.
+    We will use a custom data property called data-customlink to identify our special links. But we will attach a click listener to the document so that any newly loaded links will function as expected as well.
   </p>
-  <button onclick="pushState()">Click here to change the URL.</button>
-  <div id="content">The content here will change once the URL is updated with pushState.</div>
+  <div>
+    <a href="index.html" data-customlink="true">Home</a>
+    <a href="about.html" data-customlink="true">About</a>
+    <a href="mdn.html" data-customlink="true">MDN</a>
+  </div>
+  <div id="content">Loading...</div>
   <p>View the <a href="./script.js">JavaScript</a></p>
   <script src="./script.js"></script>
 </body>
