@@ -13,3 +13,6 @@ https://github.com/scotteratigan/clientside-routing/tree/479b318c15ba9a418f1f489
 
 # Step 4 - Add our own custom links
 https://github.com/scotteratigan/clientside-routing/tree/873c64849aca21908d3aaa4bc7216d66f1cf9d40
+
+# Step 5 - A router and render function for each component
+https://github.com/scotteratigan/clientside-routing/tree/ad39e0a7d93187ec1885224c9e610c8a2264fe28
